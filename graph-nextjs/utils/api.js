@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: process.env.BASEURL, 
+  baseURL: 'https://graphfusion-coding-test-rmfr.onrender.com', 
 });
 
 export const addNode = (nodeData) => API.post('/nodes', nodeData);
